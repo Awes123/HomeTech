@@ -88,11 +88,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\ilmosys-icon.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\font-awesome\4.7.0\css\font-awesome.min.css" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular-5.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regulard41dd41d.html" />
+    <Content Include="assets\fonts\ilmosys-iconec12.svg" />
+    <Content Include="assets\images\1.png" />
+    <Content Include="assets\images\2.png" />
+    <Content Include="assets\images\5.html" />
+    <Content Include="assets\images\6.html" />
+    <Content Include="assets\images\appstore.png" />
+    <Content Include="assets\images\bg\1.html" />
+    <Content Include="assets\images\bg\2.html" />
+    <Content Include="assets\images\bg\pattern.png" />
+    <Content Include="assets\images\clients\1.png" />
+    <Content Include="assets\images\clients\2.png" />
+    <Content Include="assets\images\clients\3.png" />
+    <Content Include="assets\images\clients\4.png" />
+    <Content Include="assets\images\clients\5.png" />
+    <Content Include="assets\images\error.png" />
+    <Content Include="assets\images\favicon.html" />
+    <Content Include="assets\images\features\1.png" />
+    <Content Include="assets\images\features\2.png" />
+    <Content Include="assets\images\googleplay.png" />
+    <Content Include="assets\images\logo-white.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\Logo\TechVibes12s22-1.png" />
+    <Content Include="assets\images\parallax\1.jpg" />
+    <Content Include="assets\images\parallax\2.html" />
+    <Content Include="assets\images\parallax\3.html" />
+    <Content Include="assets\images\parallax\4.html" />
+    <Content Include="assets\images\success.html" />
+    <Content Include="assets\images\testimonial\1.jpg" />
+    <Content Include="assets\images\testimonial\2.jpg" />
+    <Content Include="assets\images\testimonial\3.jpg" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\vendors\isotope\isotope.pkgd.js" />
+    <Content Include="assets\js\vendors\jquery.easing.min.js" />
+    <Content Include="assets\js\vendors\mc\jquery.ketchup.all.min.js" />
+    <Content Include="assets\js\vendors\mc\main.js" />
+    <Content Include="assets\js\vendors\slick\slick.css" />
+    <Content Include="assets\js\vendors\slick\slick.min.js" />
+    <Content Include="assets\js\vendors\stellar.js" />
+    <Content Include="assets\js\vendors\swipebox\css\swipebox.min.css" />
+    <Content Include="assets\js\vendors\swipebox\img\icons.png" />
+    <Content Include="assets\js\vendors\swipebox\img\loader.gif" />
+    <Content Include="assets\js\vendors\swipebox\js\jquery.swipebox.min.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,7 +167,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="assets\fonts\ilmosys-iconec12.eot" />
+    <Content Include="assets\fonts\ilmosys-iconec12.ttf" />
+    <Content Include="assets\fonts\ilmosys-iconec12.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,7 +187,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
