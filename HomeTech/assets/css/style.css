@@ -380,13 +380,13 @@ ul, ol, li {
 	padding: 150px 0 50px;
 }
 
-.intro3 h3 {
-	color: #1A1A3F;
-	margin: 0px 0px 25px;
-	font-size: 48px;
-	font-weight: 500;
-	letter-spacing: 0;
-}
+    .intro3 h3 {
+        color: #74d0e0;
+        margin: 0px 0px 25px;
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 0;
+    }
 
 .intro3 p {
 	font-size: 16px;
