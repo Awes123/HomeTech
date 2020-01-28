@@ -693,8 +693,8 @@ ul, ol, li {
 	text-transform:capitalize;
 	padding: 11px 28px;
 	border: none;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	/*border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;*/
 	font-family: Roboto;
 }
 
@@ -711,11 +711,11 @@ ul, ol, li {
 	font-size: 14px;
 }
 
-.btn.btn-primary {
-	background: #4e4e91;
-	border: 2px solid #4e4e91;
-	color: #fff;
-}
+    .btn.btn-primary {
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        border: 2px solid linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        color: #fff;
+    }
 
 .btn.btn-primary:hover {
 	border: 2px solid #4e4e91 !important;
@@ -1130,8 +1130,8 @@ ul, ol, li {
 }
 
 .info-content2 {
-	padding: 50px 0 25px !important;
-	background: #4e4e91 !important;
+    padding: 50px 0 25px !important;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 .info-content2 p{
 	font-style:italic;
@@ -1250,8 +1250,8 @@ ul, ol, li {
 
 /*  PRICING TABLE */
 .pricing {
-	padding: 100px 0;
-	background: #4e4e91;
+    padding: 100px 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .popular {
@@ -2172,10 +2172,10 @@ footer .list-inline li {
 
 
 .parallax-content {
-	background: url(../images/parallax/1.jpg) no-repeat center fixed;
-	background-size: cover;
-	padding: 55px 0;
-	position: relative;
+    background: url(../images/finger-scan.jpg) no-repeat center fixed;
+    background-size: cover;
+    padding: 55px 0;
+    position: relative;
 }
 
 .parallax-content .overlay {
@@ -2852,8 +2852,8 @@ footer .list-inline li {
 	border: 2px solid #e5e5e5;
 	box-shadow: none !important;
 	color: #000 !important;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	/*border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;*/
 }
 
 #contact-form2 #contactForm textarea {
@@ -2861,8 +2861,8 @@ footer .list-inline li {
 	border: 2px solid #e5e5e5;
 	box-shadow: none !important;
 	color: #000 !important;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	/*border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;*/
 }
 
 input:focus, textarea:focus {
@@ -2871,7 +2871,7 @@ input:focus, textarea:focus {
 }
 
 .footer2 {
-	background: #4e4e91;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .footer2 .google-map {
