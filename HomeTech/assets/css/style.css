@@ -224,7 +224,7 @@ ul, ol, li {
 }
 
 .navbar-lg .navbar-nav > li > a {
-	padding: 40px 12px 35px;
+	padding: 40px 27px 35px;
 	font-size: 15px;
 	line-height: 1.6;
 	color: #4e4e91;
@@ -2136,12 +2136,12 @@ footer .list-inline li {
 }
 
 .footer-copy {
-	background: #4e4e91;
-	padding: 20px 0;
-	text-align: center;
-	color: #fff;
-	font-size: 13px;
-	letter-spacing: 0.2px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.2px;
 }
 
 .slick-dots {
@@ -2172,6 +2172,7 @@ footer .list-inline li {
 
 
 .parallax-content {
+    background-image: url('../images/finger-scan.jpg');
     background: url(../images/finger-scan.jpg) no-repeat center fixed;
     background-size: cover;
     padding: 55px 0;
