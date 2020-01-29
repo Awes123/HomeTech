@@ -24,6 +24,7 @@
     <!-- THEME / PLUGIN CSS -->
     <link rel="stylesheet" href="~/assets/js/vendors/slick/slick.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -403,17 +404,17 @@
                         <form class="positioned" name="sentMessage" id="contactForm" action="http://demo.tutsflow.com/paysilo/php/contact.php" method="post">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
-                                    <input name="senderName" id="senderName" class="form-control" placeholder="Your Name" required="" type="text">
+                                    <input name="senderName" id="senderName" class="form-control name" placeholder="Your Name" required="" type="text">
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input name="senderEmail" id="senderEmail" class="form-control" placeholder="Email Address" required="" type="email">
+                                    <input name="senderEmail" id="senderEmail" class="form-control email" placeholder="Email Address" required="" type="email">
                                 </div>
                             </div>
-                            <input name="subject" id="subject" class="form-control" placeholder="Subject" required="" type="text">
-                            <textarea name="message" id="message" class="form-control" placeholder="Message here"></textarea>
-                            <button type="submit" class="btn btn-primary btn-ico float-center ">Send Message<i class="fa fa-paper-plane-o"></i></button>
+                            <input name="subject" id="subject" class="form-control mobile" placeholder="Contact Number" required="" type="text">
+                            <textarea name="message" id="message" class="form-control msg" placeholder="Message here"></textarea>
+                            <button type="submit" class="btn btn-primary btn-ico float-center sendmsg">Send Message<i class="fa fa-paper-plane-o"></i></button>
                         </form>
-                        <div id="sendingMessage" class="statusMessage">
+                        @*<div id="sendingMessage" class="statusMessage">
                             <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
                         </div>
                         <div id="successMessage" class="successmessage">
@@ -424,7 +425,7 @@
                         </div>
                         <div id="incompleteMessage" class="statusMessage">
                             <p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
             </div>
@@ -630,3 +631,41 @@
 
 <!-- Mirrored from demo.tutsflow.com/paysilo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2020 11:24:53 GMT -->
 </html>
+<script>
+    $(document).ready(function () {
+        $('.sendmsg').click(function () {
+            debugger
+            var name = $('.name').val();
+            var number = $('.mobile').val();
+            var mail = $('.email').val();
+            var msg = $('.msg').val();
+            Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: ' Message Sent',
+  showConfirmButton: false,
+  timer: 1500
+})
+            $.ajax({
+                type: "Post",
+                contentType: "html",
+                url: "/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg ,
+                    success: function (response) {
+                        alert(response);
+                    }
+                });
+        });
+        $('.mobile').keyup(function () {
+            debugger
+             var mobile = $(this).val();
+                var moblength = mobile.length;
+            if (moblength > 10) {
+                    $(this).val(mobile.substr(0, mobile.length - 1));
+            }
+            //var pat = /^[0-9]{10}/; 
+            //    if (!mobile.match(pat)) {
+            //        var msg = "Enter a valid Mobile";
+            //    }
+        });
+    });
+</script>
