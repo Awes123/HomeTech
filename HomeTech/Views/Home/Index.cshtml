@@ -31,7 +31,93 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
+  font-weight: normal;
+  margin: -52px 0 0 0;
+  padding: 62px 100px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+    </style>
 </head>
+
 <body id="home">
     <div class="body">
         <!-- HEADER -->
@@ -123,7 +209,74 @@
                 </div>
             </div>
         </div>
+        <div class="container my-4">
+            <div class="row">
+                <div class="card col-lg-4">
 
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/features/web-design-.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Web Application</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/features/taxi-serv.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Mobile Application</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Desktop Application</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row mt-4">
+                <div class="card col-lg-4">
+
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Logo Designing</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Business Cards</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
+                        <div class="overlay">
+                            <h2>Company Brochures</h2>
+                            <a class="info" href="#">link here</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
         <!-- How it works -->
         <div class="elements-content">
             <div class="container">
@@ -392,8 +545,8 @@
                     <!-- GOOGLE MAP -->
                     <div class="google-map">
                         <div class="container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835253572245!2d144.9537353153189!3d-37.81732767975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1551505096982"
-                                    width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d469.00872108351876!2d75.3298433626286!3d19.879275655278363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1580328696947!5m2!1sen!2sin" width="600" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         </div>
                     </div>
                 </div>
@@ -443,12 +596,12 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <p>Payment Gateway</p>
+                                <p>E-Commerce</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Smart Links</p>
+                                <p>Inventory System</p>
                             </a>
                         </li>
                         <li>
@@ -459,31 +612,31 @@
                     </ul>
                     <li>
                         <a href="#">
-                            <p>Payment Links</p>
+                            <p>Payment Getway</p>
                         </a>
                     </li>
                 </div>
                 <div class="col-md-3 footerP">
-                    <h5>Resources</h5>
+                    <h5>Services</h5>
                     <ul>
                         <li>
                             <a href="#">
-                                <p>Blog</p>
+                                <p>Websites Development</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Success Stories</p>
+                                <p>Web Application</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>eBooks</p>
+                                <p>Mobile Application</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Fee Calculator</p>
+                                <p>Desktop Application</p>
                             </a>
                         </li>
                     </ul>
@@ -493,15 +646,20 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <p>API & Plugins</p>
+                                <p>Full Stack Developer</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>System Status </p>
+                                <p>Web Developer </p>
                             </a>
                         </li>
-                </div>
+                        <li>
+                            <a href="#">
+                                <p>Database Expert</p>
+                            </a>
+                        </li>
+</div>
                 <div class="col-md-3">
                     <div class="space50"></div>
                     <div class="footer-social space50">
@@ -522,53 +680,43 @@
                         </li>
                         <li>
                             <a href="#">
-                                <p>Meet the Team</p>
+                                <p>Services</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Careers</p>
+                                <p>Products</p>
                             </a>
                         </li>
                     </ul>
                     <li>
                         <a href="#">
-                            <p>In the Press</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>Privacy</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p>Terms & Conditions</p>
+                            <p>Career</p>
                         </a>
                     </li>
                     </ul>
                 </div>
                 <div class="col-md-3 footerP">
-                    <h5>Features</h5>
+                    <h5>Speciality</h5>
                     <ul>
                         <li>
                             <a href="#">
-                                <p>NEFT</p>
+                                <p>Responsive Designs</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Convenience Fee</p>
+                                <p>Quality Applications</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>App Store</p>
+                                <p>Masters Team</p>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <p>Webhooks</p>
+                                <p>Strong Customer Support</p>
                             </a>
                         </li>
                     </ul>
@@ -593,8 +741,8 @@
                         </li>
                 </div>
                 <div class="col-md-3">
-                    <a href="#" class="footer-logo"><img src="~/assets/images/logo-white.png" alt="logo"></a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                    <a href="#" class="footer-logo"><img src="~/assets/images/Logo/TechVibes12s22-1.png" alt="logo" width="150"></a>
+                    <h3 style="font-family:auto">Your Wish Our Passion</h3>
                     <div class="space20"></div>
                     <div class="footer-social space30">
                         <a href="#" class="fa fa-facebook"></a>

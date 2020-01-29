@@ -19,7 +19,7 @@ namespace TechVibes.Controllers
         public string Contact(string name, int number, string mail, string msg)
         {
             string rtnmsg = "hello";
-
+            Email();
             return rtnmsg;
         }
         public static void Email()
