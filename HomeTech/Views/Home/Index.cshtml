@@ -639,19 +639,19 @@
             var number = $('.mobile').val();
             var mail = $('.email').val();
             var msg = $('.msg').val();
-            Swal.fire({
-  position: 'center',
-  icon: 'success',
-  title: ' Message Sent',
-  showConfirmButton: false,
-  timer: 1500
-})
+            
             $.ajax({
                 type: "Post",
                 contentType: "html",
-                url: "/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg ,
+                url: "/HomeTech/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg,
                     success: function (response) {
-                        alert(response);
+                        Swal.fire({
+              position: 'center',
+              icon: 'success',
+              title: ' Message Sent',
+              showConfirmButton: false,
+              timer: 1500
+              })
                     }
                 });
         });
