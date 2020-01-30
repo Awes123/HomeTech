@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from demo.tutsflow.com/paysilo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2020 11:24:05 GMT -->
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Tech||Vibes</title>
@@ -179,13 +178,13 @@
                         <h3 style="font-family:auto">Your Wish Our Passion</h3>
                         <p>“We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful applications.”</p>
                         <div class="space30"></div>
-                        <form class="intro-newsletter geintro-newsletter-full" action="http://demo.tutsflow.com/paysilo/php/subscribe.php" id="invite" method="POST">
+                        <form class="intro-newsletter geintro-newsletter-full" action="" id="invite" method="POST">
                             <div class="row hidden">
                                 <div class="col-md-8 col-sm-7 no-padding">
                                     <input class="e-mail" placeholder="Email Address here" name="email" id="eaddress" data-validate="validate(required, email)" type="email">
                                 </div>
                                 <div class="col-md-4 col-sm-5 no-padding">
-                                    <button class="btn btn-primary btn-block" type="submit">Let's Talk</button>
+                                    <button class="btn btn-primary btn-block" type="button">Let's Talk</button>
                                 </div>
                             </div>
                             <p>We do not spam. Will not share the email to anyone.</p>
@@ -554,7 +553,7 @@
                     <div class="cf2-wrap">
                         <h3>Drop us message.</h3>
                         <div class="clearfix space20"></div>
-                        <form class="positioned" name="sentMessage" id="contactForm" action="http://demo.tutsflow.com/paysilo/php/contact.php" method="post">
+                        <form class="positioned" name="sentMessage" id="contactForm" action="" method="">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <input name="senderName" id="senderName" class="form-control name" placeholder="Your Name" required="" type="text">
@@ -565,7 +564,7 @@
                             </div>
                             <input name="subject" id="subject" class="form-control mobile" placeholder="Contact Number" required="" type="text">
                             <textarea name="message" id="message" class="form-control msg" placeholder="Message here"></textarea>
-                            <button type="submit" class="btn btn-primary btn-ico float-center sendmsg">Send Message<i class="fa fa-paper-plane-o"></i></button>
+                            <button type="button" class="btn btn-primary btn-ico float-center sendmsg">Send Message<i class="fa fa-paper-plane-o"></i></button>
                         </form>
                         @*<div id="sendingMessage" class="statusMessage">
                             <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
@@ -776,8 +775,6 @@
     <script src="~/assets/js/vendors/mc/jquery.ketchup.all.min.js"></script>
     <script src="~/assets/js/vendors/mc/main.js"></script>
 </body>
-
-<!-- Mirrored from demo.tutsflow.com/paysilo/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2020 11:24:53 GMT -->
 </html>
 <script>
     $(document).ready(function () {
@@ -791,12 +788,12 @@
             $.ajax({
                 type: "Post",
                 contentType: "html",
-                url: "/HomeTech/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg,
+                url: "/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg,
                     success: function (response) {
                         Swal.fire({
               position: 'center',
               icon: 'success',
-              title: ' Message Sent',
+              title: 'Thank You For Your Feedback',
               showConfirmButton: false,
               timer: 1500
               })
