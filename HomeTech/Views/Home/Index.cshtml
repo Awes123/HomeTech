@@ -31,6 +31,23 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
+        .inputform {
+            display:block;
+            width:100%;
+            height:60px;
+            padding:6px 12px;
+            font-size:14px;
+            line-height:1.428571429;
+            color:black;
+            vertical-align:middle;
+           border-bottom:1px solid #70d7e8;
+           border-top:none;
+           border-right:none;
+           border-left:none;
+           border-radius:0px;
+           transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        }
+
         .hovereffect {
   width: 100%;
   height: 100%;
@@ -114,6 +131,9 @@
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
+        .overlay {
+            padding: 38px 11px 0px 11px;
+        }
     </style>
 </head>
 
@@ -168,8 +188,7 @@
         </header>
 
         <!-- Home -->
-        <div class="intro intro3">
-            <div class="container">
+        <div class="intro intro3"> <div class="container">
                 <div class="row center-content">
                     <div class="col-md-7 col-sm-6 no-padding">
                         <img src="~/assets/images/teamwork-cartoon.jpg" class="img-responsive center-block" alt="" />
@@ -208,12 +227,12 @@
                 </div>
             </div>
         </div>
-        <div class="container my-4">
+        <div class=" my-4">
             <div class="row">
                 <div class="card col-lg-4">
 
                     <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/features/web-design-.jpg" alt="">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
                         <div class="overlay">
                             <h2>Web Application</h2>
                             <a class="info" href="#">Web application development is the process and practice of developing web applications. There is a consensus that the processes involved are extensions of standard software engineering processes.</a>
@@ -222,7 +241,7 @@
                 </div>
                 <div class="card col-lg-4">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/features/taxi-serv.jpg" alt="">
+                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
                         <div class="overlay">
                             <h2>Mobile Application</h2>
                             <a class="info" href="#">link here</a>
@@ -242,7 +261,7 @@
 
 
             </div>
-            <div class="row mt-4">
+            <div class="row">
                 <div class="card col-lg-4">
 
                     <div class="hovereffect">
@@ -278,7 +297,7 @@
         </div>
         <!-- How it works -->
         <div class="elements-content">
-            <div class="container">
+            <div class="container hidden">
                 <div class="about-inline text-center">
                     <h3>What Is Tech Vibes Technologies ? </h3>
                     <p>
@@ -523,7 +542,7 @@
                 <div class="col-md-12">
                     <h3>Honesty is the best policy.</h3>
                     <div class="space10"></div>
-                    <p>We communicate honestly. No hidden fees, no surprises, no upsells! Only honest work and trustworthy staff.</p>
+                    <p>We communicate honestly,Understand clients requirments , deliver better quality product , Only honest work and trustworthy staff.</p>
                 </div>
             </div>
         </div>
@@ -533,7 +552,7 @@
     <div class="container" id="contact">
         <div class="about-inline text-center">
             <h3>Contact Us</h3>
-            <p>Our team is happy to answer your questions fill out the form and we'll be in touch as soon as possiible.</p>
+            <p>Shape your future ideas with our ideal designs and refine coded functions.</p>
         </div>
     </div>
     <!-- Contact Form -->
@@ -551,21 +570,23 @@
                 </div>
                 <div class="col-md-6">
                     <div class="cf2-wrap">
-                        <h3>Drop us message.</h3>
+                        <h3>Drop us message</h3>
                         <div class="clearfix space20"></div>
-                        <form class="positioned" name="sentMessage" id="contactForm" action="" method="">
+                        <form class="positioned" name="sentMessage" id="" action="" method="">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
-                                    <input name="senderName" id="senderName" class="form-control name" placeholder="Your Name" required="" type="text">
+                                    <input name="senderName" id="senderName" class="inputform name" placeholder="Your Name" required="" type="text">
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input name="senderEmail" id="senderEmail" class="form-control email" placeholder="Email Address" required="" type="email">
+                                    <input  class="inputform mobile" placeholder="Contact Number" required=""  type="text">
                                 </div>
                             </div>
-                            <input name="subject" id="subject" class="form-control mobile" placeholder="Contact Number" required="" type="text">
-                            <textarea name="message" id="message" class="form-control msg" placeholder="Message here"></textarea>
-                            <button type="button" class="btn btn-primary btn-ico float-center sendmsg">Send Message<i class="fa fa-paper-plane-o"></i></button>
-                        </form>
+                            <input  class=" inputform email " placeholder="Email Address" required="" type="email">
+                            <textarea name="message" id="message" class="inputform msg" placeholder="Message here"></textarea>
+                            <div class="row text-center">
+                                <button type="button" class="btn btn-primary btn-ico float-center sendmsg" style="margin-top:30px;border-radius:30px 30px 30px 30px">Send Message<i class="fa fa-paper-plane-o"></i></button>
+                            </div>
+                                </form>
                         @*<div id="sendingMessage" class="statusMessage">
                             <p><i class="fa fa-spin fa-cog"></i> Sending your message. Please wait...</p>
                         </div>
