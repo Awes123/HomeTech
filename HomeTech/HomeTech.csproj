@@ -121,10 +121,13 @@
     <Content Include="assets\images\favicon.html" />
     <Content Include="assets\images\features\1.png" />
     <Content Include="assets\images\features\2.png" />
+    <Content Include="assets\images\features\abstract-php-c-analytics.jpg" />
     <Content Include="assets\images\features\abstract-tech.jpg" />
     <Content Include="assets\images\features\asktop.jpg" />
     <Content Include="assets\images\features\chat-bot-flat-composition_1284-26561.jpg" />
     <Content Include="assets\images\features\colourful-.jpg" />
+    <Content Include="assets\images\features\computer-icon-technology-web.jpg" />
+    <Content Include="assets\images\features\concept-development-device-flat.jpg" />
     <Content Include="assets\images\features\designer-concept-set_1284-7167.jpg" />
     <Content Include="assets\images\features\mobile-app-.jpg" />
     <Content Include="assets\images\features\red-black-geome.jpg" />

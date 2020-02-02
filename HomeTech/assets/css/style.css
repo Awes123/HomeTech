@@ -711,7 +711,8 @@ ul, ol, li {
 }
 
     .btn.btn-primary {
-        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-image: linear-gradient(to left, #30cfd0 0%, #224761 90%);
+        /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
         border: 2px solid linear-gradient(to top, #30cfd0 0%, #330867 100%);
         color: #fff;
     }
@@ -1130,7 +1131,8 @@ ul, ol, li {
 
 .info-content2 {
     padding: 50px 0 25px !important;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-image: linear-gradient(to left, #30cfd0 0%, #224761 90%);
 }
 .info-content2 p{
 	font-style:italic;
@@ -1250,7 +1252,8 @@ ul, ol, li {
 /*  PRICING TABLE */
 .pricing {
     padding: 100px 0;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-image: linear-gradient(to left, #30cfd0 0%, #224761 90%);
 }
 
 .popular {
@@ -2135,7 +2138,8 @@ footer .list-inline li {
 }
 
 .footer-copy {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-image: linear-gradient(to left, #30cfd0 0%, #224761 90%);
     padding: 20px 0;
     text-align: center;
     color: #fff;
@@ -2871,7 +2875,8 @@ input:focus, textarea:focus {
 }
 
 .footer2 {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /*background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+    background-image: linear-gradient(to left, #30cfd0 0%, #224761 90%);
 }
 
 .footer2 .google-map {
