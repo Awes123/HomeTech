@@ -805,33 +805,46 @@
             var number = $('.mobile').val();
             var mail = $('.email').val();
             var msg = $('.msg').val();
-            
-            $.ajax({
-                type: "Post",
-                contentType: "html",
-                url: "/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg,
+            var namecheck = /^([a-zA-Z]{3,16})$/;
+            if (!name.match(namecheck)) {
+                 alert ("Enter a valid Name");
+            }
+            else {
+                $.ajax({
+                    type: "Post",
+                    contentType: "html",
+                    url: "/Home/Contact?name=" + name + "&number=" + number + "&mail=" + mail + "&msg=" + msg,
                     success: function (response) {
                         Swal.fire({
-              position: 'center',
-              icon: 'success',
-              title: 'Thank You For Your Feedback',
-              showConfirmButton: false,
-              timer: 1500
-              })
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Thank You For Your Feedback',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
                     }
                 });
+            }
         });
         $('.mobile').keyup(function () {
             debugger
+            
+           var pat = /^[0-9]{10}/; 
              var mobile = $(this).val();
-                var moblength = mobile.length;
-            if (moblength > 10) {
+            var moblength = mobile.length;
+            
+            //if (!mobile.match(pat))
+            //{
+            //    alert ("Enter a valid Mobile");
+            //}
+            //else
+            //{
+                if (moblength > 10)
+                {
                     $(this).val(mobile.substr(0, mobile.length - 1));
-            }
-            //var pat = /^[0-9]{10}/; 
-            //    if (!mobile.match(pat)) {
-            //        var msg = "Enter a valid Mobile";
-            //    }
+                }
+                    
+            //}
         });
     });
 </script>
