@@ -30,110 +30,133 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         .inputform {
-            display:block;
-            width:100%;
-            height:60px;
-            padding:6px 12px;
-            font-size:14px;
-            line-height:1.428571429;
-            color:black;
-            vertical-align:middle;
-           border-bottom:1px solid #70d7e8;
-           border-top:none;
-           border-right:none;
-           border-left:none;
-           border-radius:0px;
-           transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            display: block;
+            width: 100%;
+            height: 60px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: black;
+            vertical-align: middle;
+            border-bottom: 1px solid #70d7e8;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
         }
 
         .hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-}
+            width: 100%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
 
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-color: rgba(75,75,75,0.7);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-}
+            .hovereffect .overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                background-color: rgba(75,75,75,0.7);
+                -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+                transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+            }
 
-.hovereffect:hover .overlay {
-  background-color: rgba(48, 152, 157, 0.4);
-}
+            .hovereffect:hover .overlay {
+                background-color: rgba(48, 152, 157, 0.4);
+            }
 
-.hovereffect img {
-  display: block;
-  position: relative;
-}
+            .hovereffect img {
+                display: block;
+                position: relative;
+            }
 
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-}
+            .hovereffect h2 {
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                font-size: 17px;
+                padding: 10px;
+                background: rgba(0, 0, 0, 0.6);
+                -webkit-transform: translateY(45px);
+                -ms-transform: translateY(45px);
+                transform: translateY(45px);
+                -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+                transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+            }
 
-.hovereffect:hover h2 {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-}
+            .hovereffect:hover h2 {
+                -webkit-transform: translateY(5px);
+                -ms-transform: translateY(5px);
+                transform: translateY(5px);
+            }
 
-.hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  transition: all 0.4s  cubic-bezier(0.88,-0.99, 0, 1.81);
-  font-weight: normal;
-  margin: -52px 0 0 0;
-  padding: 62px 100px;
-}
+            .hovereffect a.info {
+                display: inline-block;
+                text-decoration: none;
+                padding: 7px 14px;
+                text-transform: uppercase;
+                color: #fff;
+                border: 1px solid #fff;
+                background-color: transparent;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                transform: scale(0);
+                -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+                transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+                font-weight: normal;
+                margin: -52px 0 0 0;
+                padding: 62px 100px;
+            }
 
-.hovereffect:hover a.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
+            .hovereffect:hover a.info {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
 
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
-}
+            .hovereffect a.info:hover {
+                box-shadow: 0 0 5px #fff;
+            }
+
         .overlay {
             padding: 38px 11px 0px 11px;
+        }
+        .anch {
+        color:#fff;
+        }
+        .navbars {
+        position: relative;
+    height:70px;
+     margin-bottom: 0px; 
+     border: none;
+        }
+        .servs {
+        display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
         }
     </style>
 </head>
@@ -142,7 +165,43 @@
     <div class="body">
         <!-- HEADER -->
         <header>
-            <nav class="navbar-inverse navbar-lg navbar-fixed-top" style="background: #77cfe1 !important;">
+            <nav class="navbars navbar-expand-sm" style="background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);">
+                @*<div class="navbar-header">
+                    <a href="/Home/Index" class="navbar-brand brand" style="padding-top: 3px;"><img src="~/assets/images/Logo/TechVibes12s22-1.png" alt="logo" width="150"></a>
+                </div>*@
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    @*<ul class="nav navbar-nav navbar-right navbar-login">
+                        <li>
+                            <a href="#"> <i class="fa fa-lock"></i> Chat</a>
+                        </li>
+                    </ul>*@
+                    <ul class="nav navbar-nav navbar-right mt-2">
+
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#home">Home</a>
+                        </li>
+                        <li class="dropdown mm-menu ">
+                            <a class="page-scroll anch" href="#features">Services</a>
+                        </li>
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#reviews">Products</a>
+                        </li>
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#pricing">About</a>
+                        </li>
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#faq">FAQ</a>
+                        </li>
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#contact">Contact</a>
+                        </li>
+                        <li class="dropdown mm-menu">
+                            <a class="page-scroll anch" href="#contact">Career</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar-inverse hidden navbar-lg navbar-fixed-top" style="background: #77cfe1 !important;">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="/Home/Index" class="navbar-brand brand" style="padding-top: 3px;"><img src="~/assets/images/Logo/TechVibes12s22-1.png" alt="logo" width="150"></a>
@@ -155,10 +214,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         @*<ul class="nav navbar-nav navbar-right navbar-login">
-                                <li>
-                                    <a href="#"> <i class="fa fa-lock"></i> Chat</a>
-                                </li>
-                            </ul>*@
+                            <li>
+                                <a href="#"> <i class="fa fa-lock"></i> Chat</a>
+                            </li>
+                        </ul>*@
                         <ul class="nav navbar-nav navbar-right">
 
                             <li class="dropdown mm-menu">
@@ -189,33 +248,37 @@
         </header>
 
         <!-- Home -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-        <div class="intro intro3">
-            <div class="container">
-                <div class="row center-content">
-                    <div class="col-md-7 col-sm-6 no-padding">
-                        <img src="~/assets/images/teamwork-cartoon.jpg" class="img-responsive center-block" alt="" />
-                    </div>
-                    <div class="col-md-5 col-sm-6">
-                        <h3 style="font-family:auto">Your Wish Our Passion</h3>
-                        <p>“We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful applications.”</p>
-                        <div class="space30"></div>
-                        <form class="intro-newsletter geintro-newsletter-full" action="" id="invite" method="POST">
-                            <div class="row hidden">
-                                <div class="col-md-8 col-sm-7 no-padding">
-                                    <input class="e-mail" placeholder="Email Address here" name="email" id="eaddress" data-validate="validate(required, email)" type="email">
-                                </div>
-                                <div class="col-md-4 col-sm-5 no-padding">
-                                    <button class="btn btn-primary btn-block" type="button">Let's Talk</button>
-                                </div>
-                            </div>
-                            <p>We do not spam. Will not share the email to anyone.</p>
-                        </form>
-                    </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="~/assets/images/features/software-web-development-028.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="~/assets/images/features/web-development-.jpg" alt="Chicago" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="~/assets/images/features/mobile-app-.jpg" alt="New york" style="width:100%;">
                 </div>
             </div>
-        </div>
 
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
         <!-- How it works -->
         <div class="elements-content">
             <div class="container hidden">
@@ -262,7 +325,7 @@
     </div>
 
     <!-- Parallax -->
-    <div class="elements-content bg-primary">
+    <div class="elements-content bg-primary hidden">
         <div class="container">
             <div class="row">
                 <ul class="clients no-padding text-center">
@@ -276,81 +339,55 @@
         </div>
     </div>
     <!-- Features -->
+
     <div id="features" class="container">
         <div class="about-inline text-center">
             <div class="container">
-                <h3>Start, Manage and Grow your Business </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                <h3 style="color:#30bcc6">Our Services </h3>
+                <p></p>
             </div>
         </div>
-        <!-- Clients -->
-        <div class="my-4">
-            <div class="row">
-                <div class="card col-lg-4">
-
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Web Application</h2>
-                            <a class="info" href="#">Web application development is the process and practice of developing web applications. There is a consensus that the processes involved are extensions of standard software engineering processes.</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Mobile Application</h2>
-                            <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Desktop Application</h2>
-                            <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="my-4" style="margin: 20px;"></div>
-            <div class="row">
-                <div class="card col-lg-4">
-
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Logo Designing</h2>
-                            <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Business Cards</h2>
-                            <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-lg-4">
-                    <div class="hovereffect">
-                        <img class="img-responsive" src="~/assets/images/finger-scan.jpg" alt="">
-                        <div class="overlay">
-                            <h2>Company Brochures</h2>
-                            <a class="info" href="#">link here</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="my-4" style="margin: 20px;"></div>
+        <div class="row servs text-center mt-2">
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/web-design-.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>Web developement</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/chat-bot-flat-composition_1284-26561.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>App Developement</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/asktop.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>Desktop App</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
         </div>
+        <div class="row servs text-center mt-2">
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/designer-concept-set_1284-7167.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>Logo Design</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/red-black-geome.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>Business Cards</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="~/assets/images/features/colourful-.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+                <h2>Company Brochures</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+
 
         <div class="icon-features hidden">
             <div class="container">
@@ -474,12 +511,12 @@
     </div>
 
     <!-- Pricing --->
-    <div class="pricing" id="pricing">
+    <div class="pricing mt-5" id="pricing">
         <div class="container">
             <div class="section-head-lite text-justify col-md-8 col-md-offset-2">
                 <h1>Who we are ?</h1>
                 <p>Tech Vibes Technology is a leading technology, consulting and software solutions company. we help our clients by providing the solution based on Web Development, Mobile Development, Desktop Apps,Company Brochures, Logo Designing, Business Cards, and IT Outsourcing. We design and implement the solutions that meets their requrements. We offer a wide range of IT services. We listen to our client goals, assess their needs, and then take the steps necessary to achieve their objectives. </p>
-                <div class="row">
+                <div class="row hidden">
                     <div class="col-md-12">
                         <h1>Honesty is the best policy.</h1>
                         <div class="space10"></div>
@@ -489,7 +526,7 @@
             </div>
         </div>
     </div>
-    <section class="parallax-content parallax1 text-center" data-stellar-background-ratio="0.4">
+    <section class="parallax-content parallax1 text-center mt-5" data-stellar-background-ratio="0.4">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -558,7 +595,7 @@
     <!-- Contact Us -->
     <div class="container" id="contact">
         <div class="about-inline text-center">
-            <h3>Contact Us</h3>
+            <h3 style="color:#30bcc6">Contact Us</h3>
             <p>Shape your future ideas with our ideal designs and refine coded functions.</p>
         </div>
     </div>
@@ -610,7 +647,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="space80"></div>

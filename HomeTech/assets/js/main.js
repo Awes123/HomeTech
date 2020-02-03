@@ -9,7 +9,7 @@ $(document).ready(function() {
     "use strict";
 
     // Anchor Smooth Scroll
-    $('body').on('click', '.page-scroll', function(event) {
+    $('body').on('click', '.page-scroll', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 80)
