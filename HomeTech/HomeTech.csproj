@@ -146,7 +146,13 @@
     <Content Include="assets\images\clients\jquery.jpg" />
     <Content Include="assets\images\logo-white.png" />
     <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\Logo\1702509.png" />
+    <Content Include="assets\images\Logo\Artboard 1.png" />
+    <Content Include="assets\images\Logo\Artboard 10.png" />
+    <Content Include="assets\images\Logo\code.png" />
+    <Content Include="assets\images\Logo\programming.png" />
     <Content Include="assets\images\Logo\TechVibes12s22-1.png" />
+    <Content Include="assets\images\Logo\TechVibes5.png" />
     <Content Include="assets\images\parallax\1.jpg" />
     <Content Include="assets\images\parallax\2.html" />
     <Content Include="assets\images\parallax\3.html" />
