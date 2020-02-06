@@ -158,6 +158,50 @@
     margin-right: -15px;
     margin-left: -15px;
         }
+        /*.grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}*/
+        .grow img {
+-webkit-filter: brightness(50%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+
+/*.grow img:hover {
+-webkit-filter: brightness(100%);
+}*/
+.grows img{
+transition: 1s ease;
+}
+
+.grows img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+.header-text h2 span {
+    background-color: #2980b9;
+    padding: 10px;
+    }
     </style>
 </head>
 
@@ -257,14 +301,53 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
+                <div class="item active grow">
                     <img src="~/assets/images/features/Carousel1.png" style="width:100%;height:555px;" />
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>YOUR WISH OUR PASSION...!</span>
+                            </h2>
+                            <br>
+                            <h3>
+                                <span>We Takes Your Ideas Beyound Your Imagination.</span>
+                            </h3>
+                           
+                           
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item grow">
                     <img src="~/assets/images/features/Carousel2.png" style="width:100%;height:555px;">
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Welcome to LOREM IPSUM</span>
+                            </h2>
+                            <br>
+                            <h3>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item grow">
                     <img src="~/assets/images/features/Carousel3.png" style="width:100%;height:555px;">
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Welcome to LOREM IPSUM</span>
+                            </h2>
+                            <br>
+                            <h3>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -347,19 +430,19 @@
             </div>
         </div>
         <div class="row servs text-center mt-2">
-            <div class="col-lg-4">
+            <div class="col-lg-4 grows">
                 <img src="~/assets/images/features/web-design-.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>Web developement</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p>A Good website is a spot light to your business .The techVibes team Expert in developeing a webstie or web application .we develope best quality website with responsive design ,which meets up your requirement and takes your business beyond your imagination.</p>
                 <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 grows">
                 <img src="~/assets/images/features/chat-bot-flat-composition_1284-26561.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>App Developement</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>an andrpoid mobile application is play vital role in growing upp your business. we develope mobile application in Latest Android versions.we understand the need of your business and develope a perfect mobile application which grow your business in digirtal market</p>
                 <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 grows">
                 <img src="~/assets/images/features/asktop.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>Desktop App</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -367,19 +450,19 @@
             </div><!-- /.col-lg-4 -->
         </div>
         <div class="row servs text-center mt-2">
-            <div class="col-lg-4">
+            <div class="col-lg-4 grows">
                 <img src="~/assets/images/features/designer-concept-set_1284-7167.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>Logo Design</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p>The logo is the first impression of your business to the customers. Logo talks more about youe business . We Design logo's  with proffecional designing tools and creates perfect logo which indicates your Business.</p>
                 <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 grows">
                 <img src="~/assets/images/features/red-black-geome.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>Business Cards</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p>Business cards or visiting cards are the ways to connect your customers with your business in less cost.we design business card for your business with your unique designing ideas with lstest designing tolls.</p>
                 <p><a class="btn btn-secondary hidden" href="#" role="button">View details »</a></p>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 grow">
                 <img src="~/assets/images/features/colourful-.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
                 <h2>Company Brochures</h2>
                 <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
